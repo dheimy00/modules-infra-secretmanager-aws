@@ -4,11 +4,11 @@ variable "secrets" {
     name                           = string
     description                    = string
     secret_string                  = string
-    kms_key_id                    = optional(string)
-    recovery_window_in_days       = optional(number, 30)
+    kms_key_id                     = optional(string)
+    recovery_window_in_days        = optional(number, 30)
     force_overwrite_replica_secret = optional(bool, false)
-    version_stages                = optional(list(string), ["AWSCURRENT"])
-    tags                          = optional(map(string), {})
+    version_stages                 = optional(list(string), ["AWSCURRENT"])
+    tags                           = optional(map(string), {})
   }))
 }
 
