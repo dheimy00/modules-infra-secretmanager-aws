@@ -28,7 +28,7 @@ variable "secret_string" {
   description = "The secret string to store"
   type        = string
   sensitive   = true
-  default     = null  
+  default     = null
 }
 
 variable "kms_key_id" {
