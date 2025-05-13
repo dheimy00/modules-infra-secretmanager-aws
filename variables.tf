@@ -27,7 +27,7 @@ variable "secret_description" {
 variable "secret_string" {
   description = "The secret string to store"
   type        = string
-  sensitive   = true,
+  sensitive   = true
   default     = null  
 }
 
